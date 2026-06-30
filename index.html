@@ -1,17 +1,91 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioMind</title>
-
+    <title>BioMind - AI Biology & Bioinformatics Learning Companion</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
-<footer>
-    <p>© 2026 BioMind | Built with ❤️ for Biology learners.</p>
-</footer>
+<body>
 
-<script src="script.js"></script>
+    <header>
+        <div class="logo">
+            <h1>🧬 BioMind</h1>
+            <p>Your AI-powered Biology & Bioinformatics Learning Companion</p>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#biotech">Biotech Hub</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Master Biology with AI-Driven Tools</h2>
+            <p>Interactive quizzes, smart flashcards, and deep-dive biotechnology insights designed for students and researchers alike.</p>
+            <a href="#features" class="btn-primary">Explore Features</a>
+        </section>
+
+        <hr>
+
+        <section id="features" class="features-section">
+            <h2>Core Platform Features</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="icon">📝</div>
+                    <h3>Interactive Biology Quizzes</h3>
+                    <p>Test your knowledge across topics like molecular biology, genetics, and ecology with real-time feedback and AI-generated explanations.</p>
+                </div>
+
+                <div class="grid-container">
+
+    <div class="flashcard-container">
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="card-face card-front">
+                <div class="icon">🎴</div>
+                <h3>Flashcard: Transcription</h3>
+                <p class="hint">Click to reveal definition</p>
+            </div>
+            <div class="card-face card-back">
+                <h3>Definition</h3>
+                <p>The process by which the information in a strand of DNA is copied into a new molecule of messenger RNA (mRNA).</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+                <div class="card">
+                    <div class="icon">🔬</div>
+                    <h3>Biotechnology Information Hub</h3>
+                    <p>Stay updated with curated insights, structural breakdowns, and documentation on CRISPR, recombinant DNA, and sequencing technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="biotech" class="content-section">
+            <h2>Featured Topic: Biotechnology & Innovation</h2>
+            <p>Biotechnology bridges biology and technology, utilizing cellular and biomolecular processes to develop groundbreaking solutions for healthcare, agriculture, and environmental sustainability.</p>
+            <blockquote>
+                "The 21st century will surely be the century of data science and biotechnology."
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BioMind Portfolio Project. Built for GitHub.</p>
+    </footer>
 
 </body>
+<script>
+    function flipCard(cardElement) {
+        // Toggles the 'flipped' class on click
+        cardElement.classList.toggle('flipped');
+    }
+</script>
 </html>
